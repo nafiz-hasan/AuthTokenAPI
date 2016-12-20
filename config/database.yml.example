@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  host: localhost
+  pool: 5
+  min_messages: warning
+
+development:
+  <<: *default
+  database: api-dev
+  username: # Your DB USERNAME
+  password: # Your DB PASSWORD
+
+test:
+  <<: *default
+  database: api-test
+  username: # Your DB USERNAME
+  password: # Your DB PASSWORD
