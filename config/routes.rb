@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
-  resources :items
-  post 'authenticate', to: 'authentication#authenticate'
+  namespace :v1 do
+    resources :items
+    post 'authenticate', to: 'authentication#authenticate'
+  end
+
+  namespace :v2 do
+    resources :items
+    post 'authenticate', to: 'authentication#authenticate'
+  end
 end

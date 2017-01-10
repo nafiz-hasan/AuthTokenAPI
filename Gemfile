@@ -18,6 +18,8 @@ gem 'bcrypt', '3.1.11'
 # gem 'rack-cors'
 gem 'jwt', '~> 1.5', '>= 1.5.6'
 gem 'pg'
+gem 'rabl-rails'
+gem 'responders', '~> 2.3'
 gem 'simple_command', '~> 0.0.9'
 
 group :development, :test do
