@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+# Authenticate User
 class AuthenticateUser
   prepend SimpleCommand
 

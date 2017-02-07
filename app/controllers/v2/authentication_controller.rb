@@ -1,4 +1,6 @@
+# frozen_string_literal: true
 module V2
+  # Authentication Controller
   class AuthenticationController < ApplicationController
     skip_before_action :authenticate_request
 
