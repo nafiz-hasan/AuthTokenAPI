@@ -25,12 +25,11 @@ class AuthorizeApiRequest
   end
 
   def http_auth_header
-    # F*** rubocop
     if headers['Authorization'].present?
       return headers['Authorization'].split(' ').last
-    else
-      errors.add(:token, 'Missing token')
     end
+
+    errors.add(:token, 'Missing token')
     nil
   end
 end

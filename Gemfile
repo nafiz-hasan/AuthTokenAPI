@@ -2,6 +2,7 @@
 source 'https://rubygems.org'
 
 gem 'bcrypt', '3.1.11'
+gem 'jbuilder'
 gem 'jwt', '~> 1.5', '>= 1.5.6'
 gem 'pg'
 gem 'puma', '~> 3.0'

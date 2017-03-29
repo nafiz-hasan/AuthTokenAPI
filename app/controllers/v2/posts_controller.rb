@@ -8,12 +8,10 @@ module V2
 
     def index
       @posts = Post.all
-      respond_with(@posts)
+      render json: @posts
     end
 
-    def show
-      respond_with(@post)
-    end
+    def show; end
 
     def create
       @post = Post.new(post_params)
@@ -24,12 +22,12 @@ module V2
 
     def update
       @post.update(post_params)
-      respond_with(@post)
+      render json: @post
     end
 
     def destroy
       @post.destroy
-      respond_with(@post)
+      render json: @post
     end
 
     private
